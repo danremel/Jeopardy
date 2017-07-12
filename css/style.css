@@ -1,5 +1,6 @@
 body {
 	background-color: #0100a0;
+	color: white;
 }
 
 .header {
@@ -8,15 +9,24 @@ body {
 #jeopardy-logo {
 	width: 50%;
 }
+.scoreboard {
+	color: white;
+	text-align: right;
+	margin-right: 10%;
+}
 
+.response-field {
+
+}
 .box-container {
 	background-color: blue;
 	border: 3px solid black;
 	color: white;
 	width: 30%;
 }
-.box-container {
 
+.category-title {
+	text-align: center;
 }
 .boxes {
 	display: flex;
