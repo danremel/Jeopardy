@@ -45,6 +45,8 @@ $('.divs').click(function () {
 	var points = this.getAttribute("points");
 	if (makeLowerCase === this.getAttribute("answer")) {
 		alert("You are correct!")
+	} else {
+		alert("You are incorrect.")
 	}
 })
 // GIVEN user selects a box
