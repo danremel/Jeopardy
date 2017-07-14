@@ -2,7 +2,7 @@ body {
 	background-color: #0100a0;
 	color: white;
 }
-h4, p {
+.modal-content {
 	color: black;
 }
 .header {
@@ -16,7 +16,7 @@ h4, p {
 	margin-right: 10%;
 }
 
-.box-container {
+.container {
 	background-color: blue;
 	border: 3px solid black;
 	width: 30%;
@@ -25,14 +25,16 @@ h4, p {
 .category-title {
 	text-align: center;
 }
-.btn {
+
+
+.col {
 	display: flex;
 	flex-direction: column;
-	border: 2px solid yellow;
-	background-color: blue;
-	color: white;
-	width: 100%;
-	padding-left: 45%;
-	padding-right: 45%;
-	line-height: 50px;
+}
+
+.divs{
+	height: 20%;
+	width: 30%;
+	text-align: center;
+	border: 1px solid yellow;
 }

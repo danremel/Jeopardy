@@ -1,80 +1,44 @@
-$(document).ready(function(){
 	console.log("working");
 
 // Question Set
 var QuestionSet = [
 	{	
-		id: "1-1",
-		question: "Question1",
-		answers: {
-			a1: "answer1",
-			a2: "answer2",
-			a3: "answer3",
-			a4: "answer4"
-		},
-		correctAnswer: "a2",
-		points: "$100"
+		question: "The color of grass.",
+		answer: "what is green?",
+		points: 100
 	},
 	{
-		id: "1-2",
-		question: "Question2",
-		answers: {
-			a1: "answer1",
-			a2: "answer2",
-			a3: "answer3",
-			a4: "answer4"
-		},
-		correctAnswer: "a1",
-		points: "$200"
+		question: "70% of the human body is made of this.",
+		answer: "what is water?",
+		points: 200
 	},
 	{
-		id: "1-3",
-		question: "Question3",
-		answers: {
-			a1: "answer1",
-			a2: "answer2",
-			a3: "answer3",
-			a4: "answer4"
-		},
-		correctAnswer: "a4",
-		points: "$300"
-	},
-	{
-		id: "1-4",
-		question: "Question4",
-		answers: {
-			a1: "answer1",
-			a2: "answer2",
-			a3: "answer3",
-			a4: "answer4"
-		},
-		correctAnswer: "a1",
-		points: "$400"
-	},
-	{
-		id: "1-5",
-		question: "Question5",
-		answers: {
-			a1: "answer1",
-			a2: "answer2",
-			a3: "answer3",
-			a4: "answer4"
-		},
-		correctAnswer: "a2",
-		points: "$500"
-	},
+		question: "The style of music born in the heart of New Orleans.",
+		answer: "what is jazz?",
+		points: 300
+	}
 ];
+
+// These are the divs containing the questions/points
+for (i = 0; i < QuestionSet.length; i++){
+	// Assigning the variable $div to a newly created element
+	var $div = $('<div>');
+	// Adding the class 'divs' to each div created by $div
+	$div.addClass('divs');
+	// This adds text to the divs to display the 
+	// amount of points each question is worth on the page
+	$div.html(QuestionSet[i].points);
+	// The next three lines link the attributes to each piece of the
+	// object in the QuestionSet array
+	$div.attr("question", QuestionSet[i].question);
+	$div.attr("answer", QuestionSet[i].answer);
+	$div.attr("points", QuestionSet[i].points);
+	// Adds the div to the body
+	$('body').append($div);
+};
+
 
 // ## CREATE BUTTON FUNCTIONALITY ##
 // GIVEN user selects a box
 // WHEN box is clicked
-$( ".boxes" ).click(function( event ) {
-  $( ".response-field" ).html(event.target.nodeName);
-});
-
-
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-  });
-// THEN the box reveals the answer
-
+// THEN the box reveals the question in a pop-up box
