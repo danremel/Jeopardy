@@ -39,6 +39,14 @@ for (i = 0; i < QuestionSet.length; i++){
 
 
 // ## CREATE BUTTON FUNCTIONALITY ##
+$('.divs').click(function () {
+	var playerInput = prompt(this.getAttribute("question"));
+	var makeLowerCase = playerInput.toLowerCase();
+	var points = this.getAttribute("points");
+	if (makeLowerCase === this.getAttribute("answer")) {
+		alert("You are correct!")
+	}
+})
 // GIVEN user selects a box
 // WHEN box is clicked
 // THEN the box reveals the question in a pop-up box

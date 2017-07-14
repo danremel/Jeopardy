@@ -2,9 +2,7 @@ body {
 	background-color: #0100a0;
 	color: white;
 }
-.modal-content {
-	color: black;
-}
+
 .header {
 	height: 50%;
 }
@@ -14,22 +12,6 @@ body {
 .scoreboard {
 	text-align: right;
 	margin-right: 10%;
-}
-
-.container {
-	background-color: blue;
-	border: 3px solid black;
-	width: 30%;
-}
-
-.category-title {
-	text-align: center;
-}
-
-
-.col {
-	display: flex;
-	flex-direction: column;
 }
 
 .divs{
