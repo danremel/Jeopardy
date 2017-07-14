@@ -16,6 +16,16 @@ var QuestionSet = [
 		question: "The style of music born in the heart of New Orleans.",
 		answer: "what is jazz?",
 		points: 300
+	},
+	{
+		question: "The year Christopher Columbus 'Sailed the Ocean Blue.'",
+		answer: "what is 1492?",
+		points: 400
+	},
+	{
+		question: "This person is credited with the quote 'One small step for man, one giant leap for mankind.'",
+		answer: "who is neil armstrong?",
+		points: 500
 	}
 ];
 
