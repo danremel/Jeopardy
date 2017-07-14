@@ -1,6 +1,5 @@
-	console.log("working");
+console.log("working");
 
-var $category;
 // Question Set
 var QuestionSet = [
 			{	
