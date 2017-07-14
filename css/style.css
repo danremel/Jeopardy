@@ -1,6 +1,8 @@
 body {
 	background-color: #0100a0;
+	background-image: url("http://www.macmonkies.com/Desktops/Blue_Wave_2_1024.jpg");
 	color: white;
+	font-family: 'Coustard', serif;
 }
 
 .header {
@@ -9,9 +11,11 @@ body {
 #jeopardy-logo {
 	width: 50%;
 }
-.scoreboard {
+#scoreboard {
+	float: right;
 	text-align: right;
 	margin-right: 10%;
+	border-bottom: 1px solid white;
 }
 
 .divs{
@@ -19,4 +23,9 @@ body {
 	width: 30%;
 	text-align: center;
 	border: 1px solid yellow;
+	background: blue; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(#a6a6e8 5%, #3399ff 15%, #3333ff 60%); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(#a6a6e8 5%, #3399ff 15%, #3333ff 60%); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(#a6a6e8 5%, #3399ff 15%, #3333ff 60%); /* For Firefox 3.6-15 */
+  background: radial-gradient(#a6a6e8 5%, #3399ff 15%, #3333ff 60%); /* Standard syntax */
 }

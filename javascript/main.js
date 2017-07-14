@@ -1,39 +1,40 @@
 	console.log("working");
 
+var $category;
 // Question Set
 var QuestionSet = [
-	{	
-		question: "The color of grass.",
-		answer: "what is green?",
-		points: 100
-	},
-	{
-		question: "This makes up 70% of the human body.",
-		answer: "what is water?",
-		points: 200
-	},
-	{
-		question: "The style of music born in the heart of New Orleans.",
-		answer: "what is jazz?",
-		points: 300
-	},
-	{
-		question: "The year Christopher Columbus 'Sailed the Ocean Blue.'",
-		answer: "what is 1492?",
-		points: 400
-	},
-	{
-		question: "This person is credited with the quote 'One small step for man, one giant leap for mankind.'",
-		answer: "who is neil armstrong?",
-		points: 500
-	}
+			{	
+				question: "The color of grass.",
+				answer: "what is green?",
+				points: 100
+			},
+			{
+				question: "This makes up 70% of the human body.",
+				answer: "what is water?",
+				points: 200
+			},
+			{
+				question: "The style of music born in the heart of New Orleans.",
+				answer: "what is jazz?",
+				points: 300
+			},
+			{
+				question: "The year Christopher Columbus 'Sailed the Ocean Blue.'",
+				answer: "what is 1492?",
+				points: 400
+			},
+			{
+				question: "This person is credited with the quote 'One small step for man, one giant leap for mankind.'",
+				answer: "who is neil armstrong?",
+				points: 500
+			}
 ];
 
 // This is the starting score for the player
 var playerScore = 0;
 
 // These are the divs containing the questions/points
-for (i = 0; i < QuestionSet.length; i++){
+for (var i = 0; i < QuestionSet.length; i++){
 	// This assigns the variable $div to a newly created element
 	var $div = $('<div>');
 	// This adds the class 'divs' to each div created by $div
@@ -61,7 +62,7 @@ function updatePlayerScore() {
 
 // This creates a click event listener inside the divs
 $('.divs').click(function () {
-// This creates a prompt that reveals the question
+	// This creates a prompt that reveals the question
 	var playerInput = prompt(this.getAttribute("question"))
 	// This command makes any uppercase letters in the response
 	// turn into lowercase letters, creating uniformity and matching
@@ -94,5 +95,5 @@ $('.divs').click(function () {
 		// points displayed on the scoreboard
 		updatePlayerScore();
 	}
-})
+});
 
