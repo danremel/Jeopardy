@@ -28,4 +28,4 @@ For Unit 1's project, I decided to create a basic version of Jeopardy. The user 
 
 * Add Multiple Rounds, Double Jeopardy, and Final Jeopardy
 * Create multiplayer functionality
-* Assign themes do each category
+* Assign themes to each category
