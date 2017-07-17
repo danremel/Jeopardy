@@ -21,6 +21,7 @@ body {
 .divs{
 	height: 20%;
 	width: 30%;
+	padding: 30px;
 	text-align: center;
 	border: 1px solid yellow;
 	background: blue; /* For browsers that do not support gradients */
