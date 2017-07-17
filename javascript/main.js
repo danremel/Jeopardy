@@ -32,6 +32,7 @@ var QuestionSet = [
 // This is the starting score for the player
 var playerScore = 0;
 
+
 // These are the divs containing the questions/points
 for (var i = 0; i < QuestionSet.length; i++){
 	// This assigns the variable $div to a newly created element
@@ -57,10 +58,20 @@ function updatePlayerScore() {
 	// the text to display the current score, converting 
 	// the score from a "number" data type to a "string"
 	$('#scoreboard').text("Score: " + playerScore.toString());
-}
+
+	// When user's score meets or exceeds 1000, they
+	// are notified with a "You win!" message
+	if (playerScore >= 1000) {
+	alert("You win!");
+	// When user's score meets or exceeds -1000, they
+	// are notified with a "You lose!" message
+} else if (playerScore <= -1000) {
+	alert("You lose!");
+};
+};
 
 // This creates a click event listener inside the divs
-$('.divs').click(function () {
+$('.divs').one('click', function () {
 	// This creates a prompt that reveals the question
 	var playerInput = prompt(this.getAttribute("question"))
 	// This command makes any uppercase letters in the response
@@ -83,6 +94,9 @@ $('.divs').click(function () {
 		// Calls the function to update the 
 		// points displayed on the scoreboard
 		updatePlayerScore();
+		$(this).css({
+			color: "#0fe40f"
+		});
 	} else {
 		// This notifies the player that
 		// their response is incorrect
@@ -93,6 +107,8 @@ $('.divs').click(function () {
 		// Calls the function to update the
 		// points displayed on the scoreboard
 		updatePlayerScore();
+		$(this).css({
+			color: "red"
+		});
 	}
 });
-
