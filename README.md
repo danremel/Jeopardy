@@ -4,7 +4,7 @@
 
 For Unit 1's project, I decided to create a basic version of Jeopardy. The user plays the game by clicking the displayed boxes marked with various amounts of points, and earns points by correctly answering the question prompt. If the user answers incorrectly, the corresponding amount of points will be subtracted from their score.
 
-**Live Site:** [danremel.bitballoon.com](danremel.bitballoon.com)
+**Live Site:** [danremeljeopardy.bitballoon.com](danremel.bitballoon.com)
 
 ## Technologies Used
 
